@@ -1,6 +1,6 @@
 export function generateUser(formData){
     return {
-        name:formData.get('name'),
+        name:formData.get('name-input'),
         tasks: []
     };
 
@@ -16,4 +16,5 @@ export function getUser(){
     const userString = localStorage.getItem('USER');
     return JSON.parse(userString);
 }
+
 

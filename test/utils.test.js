@@ -9,7 +9,7 @@ test('generateUser function returns userObject with name input', (expect)=> {
         tasks:[]
     };
     const formData = new FormData();
-    formData.set('name', 'mira');
+    formData.set('name-input', 'mira');
 
     const actual = generateUser(formData);
     expect.deepEqual(userObject, actual);
