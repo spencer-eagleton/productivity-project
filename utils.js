@@ -17,4 +17,11 @@ export function getUser(){
     return JSON.parse(userString);
 }
 
+export function displayUser(userObject){
+    const userDisplay = document.getElementById('user-display');
+    const userName = document.createElement('span');
+    userName.textContent = `Hello, ${userObject.name}`;
+    userDisplay.append(userName);
+}
+
 
