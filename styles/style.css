@@ -1,0 +1,39 @@
+#main-container {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    /* background: url(.jpg); */
+}
+
+#welcome-div {
+    position: absolute;
+    width: 993px;
+    height: 78px;
+    left: 223px;
+    top: 283px;
+    font-family: SF UI Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+}
+
+form > input {
+    position: absolute;
+    width: 685px;
+    height: 114px;
+    left: 240px;
+    top: 544px;
+}
+
+form > button {
+    position: absolute;
+    width: 219px;
+    height: 80px;
+    left: 941px;
+    top: 565px;
+    border-radius: 30%;
+}
+
