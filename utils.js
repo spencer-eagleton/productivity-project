@@ -3,7 +3,6 @@ export function generateUser(formData){
         name:formData.get('name-input'),
         tasks: []
     };
-
 }
 
 export function setUser(userObject){
@@ -24,15 +23,6 @@ export function displayUser(userObject){
     userDisplay.append(userName);
 }
 
-// export function getTasks() {
-//     let lsTasks = localStorage.getItem('TASKS'); 
-//     const tasks = JSON.parse(lsTasks); 
-
-//     if (!tasks){
-//         const taskString = JSON.stringify()
-//     }
-//     return tasks; 
-// }
 
 export function addTask(tasksForm){
 
@@ -52,25 +42,3 @@ export function addTask(tasksForm){
 }
 
 
-
-
-// {id: 'do laundry', completed: false}, {id: 'do homework;, completed: false}
-
-// {
-//     username: 'Mark',
-   
-//            todos: [
-//                {
-//                    todo: appended from input1
-//                    completed: false
-//                },
-//                {
-//                    todo: appended from input2
-//                    completed: false
-//                },
-//                {
-//                    todo: appended from input3
-//                    completed: true
-//                },
-//            ]
-//        }
