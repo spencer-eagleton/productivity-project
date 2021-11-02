@@ -41,4 +41,7 @@ export function addTask(tasksForm){
     setUser(userObject); 
 }
 
-
+export function clearStorage(){
+    localStorage.removeItem('USER');
+    window.location.replace('..');
+}
