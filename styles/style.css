@@ -1,5 +1,5 @@
 #main-container {
-    position: absolute;
+    /* position: absolute; */
     width: 1440px;
     height: 1024px;
     left: 0px;
@@ -8,7 +8,7 @@
 }
 
 #welcome-div {
-    position: absolute;
+    /* position: absolute; */
     width: 993px;
     height: 78px;
     left: 223px;
@@ -21,7 +21,7 @@
 }
 
 form > input {
-    position: absolute;
+    /* position: absolute; */
     width: 685px;
     height: 114px;
     left: 240px;
@@ -29,7 +29,7 @@ form > input {
 }
 
 form > button {
-    position: absolute;
+    /* position: absolute; */
     width: 219px;
     height: 80px;
     left: 941px;
@@ -37,3 +37,7 @@ form > button {
     border-radius: 30%;
 }
 
+footer {
+    text-align: center;
+    margin: 25px;
+}

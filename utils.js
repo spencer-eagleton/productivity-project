@@ -18,38 +18,28 @@ export function getUser(){
 
 export function displayUser(userObject){
     const userDisplay = document.getElementById('user-display');
+    const logo = document.getElementById('logo'); 
+    
     const userName = document.createElement('span');
-    userName.textContent = `Hello, ${userObject.name}`;
+    const img = document.createElement('img'); 
+    
+    img.setAttribute('id', 'hourglass'); 
+    img.src = '../assets/hourglass.png';
+    userName.textContent = `Hello, ${userObject.name}!`;
+    
+    logo.append(img); 
     userDisplay.append(userName);
 }
 
-
-export function addTask(tasksForm){
-
-    const newTask1 = tasksForm.get('task1');
-    const newTask2 = tasksForm.get('task2'); 
-    const newTask3 = tasksForm.get('task3'); 
-    
+export function addTask(task){
+    const newTask = {
+        id: Math.ceil(Math.random() * 10000), 
+        message: task,
+        completed: false
+    };
     let userObject = getUser(); 
-    
-    const tasks = [newTask1, newTask2, newTask3]; 
-    
-    for (let item of tasks){
-        userObject.tasks.push({ 
-            id: Math.ceil(Math.random() * 10000), 
-            message: item, 
-            completed: false });  
-    }
-
+    userObject.tasks.push(newTask);
     setUser(userObject); 
-}
-
-export function findById(id, itemList) {
-    for (let item of itemList) {
-        if (item.id === id){
-            return item;
-        }
-    }
 }
 
 export function clearStorage(){
