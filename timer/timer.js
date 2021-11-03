@@ -16,8 +16,9 @@ for (let item of user.tasks){
     taskContainer.append(li); 
     
     if (item.completed === true){
-        checkbox.classList.add('completed');
+        li.classList.add('completed');
     }
+
     checkbox.addEventListener('change', (e) => {
         if (e.target.checked){
             completeTask(item.id);
@@ -37,6 +38,7 @@ doneButton.addEventListener('click', () => {
 
 let timer = 0;
 const progressBar = document.getElementById('progress-bar');
+
 const duration = 2700;
 const interval = 1000;
    
@@ -47,6 +49,7 @@ let intervalId = setInterval(()=>{
     progressBar.style.width = `${timer * (duration / interval)}%`;
     if (timer === (duration / 100) + 1){
         clearInterval(intervalId);
+
         // window.location.replace('../results');
         window.alert('Time for a break. You deserve it!');
     }
