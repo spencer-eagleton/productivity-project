@@ -3,7 +3,6 @@ export function generateUser(formData){
         name:formData.get('name-input'),
         tasks: []
     };
-
 }
 
 export function setUser(userObject){
@@ -25,3 +24,24 @@ export function displayUser(userObject){
 }
 
 
+export function addTask(tasksForm){
+
+    const newTask1 = tasksForm.get('task1');
+    const newTask2 = tasksForm.get('task2'); 
+    const newTask3 = tasksForm.get('task3'); 
+    
+    let userObject = getUser(); 
+    
+    const tasks = [newTask1, newTask2, newTask3]; 
+    
+    for (let item of tasks){
+        userObject.tasks.push({ id: item, completed: false });  
+    }
+
+    setUser(userObject); 
+}
+
+export function clearStorage(){
+    localStorage.removeItem('USER');
+    window.location.replace('..');
+}
