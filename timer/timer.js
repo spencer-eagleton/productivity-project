@@ -36,14 +36,20 @@ doneButton.addEventListener('click', () => {
 });
 
 
-let timer = 27;
+let timer = 0;
 const progressBar = document.getElementById('progress-bar');
 
-let interval = setInterval(()=>{
-    timer--;
-    progressBar.style.width = `${timer / 27 * 100}%`;
-    if (timer === 0){
-        clearInterval(interval);
+const duration = 2700;
+const interval = 1000;
+   
+let intervalId = setInterval(()=>{
+    timer++;
+ 
+    console.log(timer);
+    progressBar.style.width = `${timer * (duration / interval)}%`;
+    if (timer === (duration / 100) + 1){
+        clearInterval(intervalId);
+
         // window.location.replace('../results');
         window.alert('Time for a break. You deserve it!');
     }
