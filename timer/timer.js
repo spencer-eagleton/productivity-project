@@ -13,18 +13,16 @@ for (let item of user.tasks){
         let checkbox = document.createElement('input'); 
         checkbox.setAttribute('type', 'checkbox'); 
         checkbox.classList.add('checkbox'); 
-        // checkbox.value = item.id; 
-        li.textContent = item.id;
+        li.textContent = item.message;
         li.append(checkbox); 
         taskContainer.append(li); 
     }
 } 
 
-
 doneButton.addEventListener('click', () => {
     let checkedItems = document.querySelectorAll('input[type=checkbox]:checked'); 
     for (let item of checkedItems){
-        console.log(user.tasks.completed); 
+        console.log(item); 
     }
 }); 
     // find the corresponding item (findById)
