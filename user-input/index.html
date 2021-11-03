@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/user-input/user-input.css">
     <title>User Input</title>
 </head>
 <body>
     <header>
-        <h1>dooey</h1>
+        <h1 id="logo">dooey</h1>
         <div id="user-display">
 
         </div>
     </header>
-    <main>
-        <h2>What do you want to get done today?</h2>
-        <h3>You have five hours to work.</h3>
+    <main id="main-container">
+        <div id="message-container">
+            <h2 id="greeting">What do you want to get done today?</h2>
+            <h3 id="time">You have five hours to work.</h3>
+        </div>
 
         <form id="task-input">
-            <input type="text" placeholder="Task 1">
-            <input type="text" placeholder="Task 2">
-            <input type="text" placeholder="Task 3">
-            <button id="task-input-button">Get started!</button>
+            <input type="text" name="task1" id="task1" placeholder="Task 1">
+            <input type="text" name="task2" id="task2" placeholder="Task 2">
+            <input type="text" name="task3" id="task3" placeholder="Task 3">
+            <button type="submit" id="task-input-button">Get started!</button>
         </form>
 
     </main>
