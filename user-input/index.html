@@ -16,16 +16,38 @@
     <main id="main-container">
         <div id="message-container">
             <h2 id="greeting">What do you want to get done today?</h2>
-            <h3 id="time">You have five hours to work.</h3>
+            <h3>You have five hours to work.</h3>
         </div>
-
-        <form id="task-input">
-            <input type="text" name="task1" id="task1" placeholder="Task 1">
-            <input type="text" name="task2" id="task2" placeholder="Task 2">
-            <input type="text" name="task3" id="task3" placeholder="Task 3">
-            <button type="submit" id="task-input-button">Get started!</button>
-        </form>
-
+        <div id="task-form-container">
+            <form id="task-input-form">
+                <label>
+                    <input type="text" name="task-input" id="task-input" placeholder="Input Task Here">
+                </label>
+                <button type="submit" id="task-input-button">Add Task</button>
+            </form>
+        </div>
+        <div id="task-list-container">
+            <ul id="task-list">
+                
+            </ul>
+        </div>
+            <div id="time-container">
+                <form id="time-input-form">
+                    <legend>
+                        <h2>How much time do you have?</h2>
+                    </legend>
+                    <label>
+                        <input type="button" name="half-hour" id="half-hour" value="30 Minutes">
+                    </label>
+                    <label>
+                        <input type="button" name="one-hour" id="one-hour" value="One Hour">
+                    </label>
+                    <label>
+                        <input type="button" name="two-hours" id="two-hours" value="Two Hours">
+                    </label>
+                </form>
+            </div>
+        <button id="start-button">I'm ready to begin</button>
     </main>
     <footer>
         <a href="./about/index.html">About the founders</a>
@@ -33,5 +55,6 @@
 
 
     <script type="module" src="./user-input.js"></script>
+
 </body>
 </html>
