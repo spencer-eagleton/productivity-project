@@ -23,34 +23,26 @@ export function displayUser(userObject){
     userDisplay.append(userName);
 }
 
-
-export function addTask(tasksForm){
-
-    const newTask1 = tasksForm.get('task1');
-    const newTask2 = tasksForm.get('task2'); 
-    const newTask3 = tasksForm.get('task3'); 
-    
+export function addTask(task){
+    const newTask = {
+        id: Math.ceil(Math.random() * 10000), 
+        message: task,
+        completed: false
+    };
     let userObject = getUser(); 
-    
-    const tasks = [newTask1, newTask2, newTask3]; 
-    
-    for (let item of tasks){
-        userObject.tasks.push({ 
-            id: Math.ceil(Math.random() * 10000), 
-            message: item, 
-            completed: false });  
-    }
-
+    userObject.tasks.push(newTask);
     setUser(userObject); 
 }
 
-export function findById(id, itemList) {
-    for (let item of itemList) {
-        if (item.id === id){
-            return item;
-        }
-    }
-}
+
+
+// export function findById(id, itemList) {
+//     for (let item of itemList) {
+//         if (item.id === id){
+//             return item;
+//         }
+//     }
+// }
 
 export function clearStorage(){
     localStorage.removeItem('USER');

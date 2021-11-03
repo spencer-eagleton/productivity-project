@@ -20,18 +20,26 @@
             <h3 id="time">You have five hours to work.</h3>
         </div>
 
-        <form id="task-input">
-            <input type="text" name="task1" id="task1" placeholder="Task 1">
-            <input type="text" name="task2" id="task2" placeholder="Task 2">
-            <input type="text" name="task3" id="task3" placeholder="Task 3">
-            <button type="submit" id="task-input-button">Get started!</button>
+        <form id="task-input-form">
+            <label>
+                <input type="text" name="task-input" id="task-input" placeholder="Input Task Here">
+            </label>
+            <button type="submit" id="task-input-button">Add Task</button>
         </form>
 
+            
+    
+    <ul id="task-list">
+        
+        
+    </ul>
+
+    <button id="start-button">I'm ready to begin</button>
     </main>
 
 
 
 
-    <script type="module" src="./user-input.js"></script>
+    <script type="module" src="user-input.js"></script>
 </body>
 </html>
