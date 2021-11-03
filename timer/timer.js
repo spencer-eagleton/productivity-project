@@ -21,10 +21,12 @@ for (let item of user.tasks){
     checkbox.addEventListener('change', (e) => {
         if (e.target.checked){
             completeTask(item.id);
+            li.style.textDecoration = 'line-through';
         } 
         else {
             incompleteTask(item.id);
             checkbox.classList.remove('completed');
+            li.style.textDecoration = 'none';
         }
     });
 } 
