@@ -18,8 +18,13 @@ export function getUser(){
 
 export function displayUser(userObject){
     const userDisplay = document.getElementById('user-display');
+    const logo = document.getElementById('logo'); 
     const userName = document.createElement('span');
-    userName.textContent = `Hello, ${userObject.name}`;
+    const img = document.createElement('img'); 
+    img.setAttribute('id', 'hourglass'); 
+    img.src = '../assets/hourglass.png';
+    userName.textContent = `Hello, ${userObject.name}!`;
+    logo.append(img); 
     userDisplay.append(userName);
 }
 

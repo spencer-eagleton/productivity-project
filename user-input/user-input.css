@@ -1,5 +1,17 @@
+header {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+#hourglass {
+    animation: pulse 5s infinite ease-in-out;
+}
+
 #main-container {
-    position: absolute;
+    /* position: absolute; */
+    display: flex; 
+    flex-direction: column; 
     width: 1440px;
     height: 1042px;
     left: 0px;
@@ -8,31 +20,34 @@
 }
 
 #logo {
-    position: absolute;
+    /* position: absolute;
     width: 187px;
     height: 78px;
     left: 17px;
-    top: 29px;
+    top: 29px; */
 
     font-family: SF UI Text;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
     line-height: 57px;
+    margin: 25px; 
+    display: flex; 
 }
 
 #user-display {
-    position: absolute;
+    /* position: absolute;
     width: 488px;
     height: 75px;
     left: 918px;
-    top: 22px;
+    top: 22px; */
 
     font-family: SF UI Text;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 57px;
+    margin: 25px;
 }
 
 #task1 {
@@ -84,3 +99,22 @@
     background: #72DCF3;
     border-radius: 13px;
 }
+
+@keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+
+  }
