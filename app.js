@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { generateUser, setUser } from './utils.js';
-import { quotes, quote } from './quote.js';
+import { quotes, randomQuote, } from './quote.js';
 
 
 
@@ -24,6 +24,8 @@ userForm.addEventListener('submit', (e)=>{
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+
+ 
 
 
 
