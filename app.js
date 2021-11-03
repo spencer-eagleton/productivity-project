@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
 import { generateUser, setUser } from './utils.js';
 
-import { quotes, randomQuote, } from './quote.js';
+// import { quotes, randomQuote, } from './quote.js';
 
 
 

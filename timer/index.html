@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./timer.css">
+    <link rel="stylesheet" href="../testing/progress-bar.css">
     <title>Timer</title>
 </head>
 <body>
@@ -15,28 +16,32 @@
     </div>
 </header>
 <main>
-    <div id="timer-container">
-
-    </div>
-
-
-    <span id="quote-text"></span>
-
-
+        <div class="container">
+            <div id="bar-background">
+                <div id="progress-bar">
     
-
- 
-
+                </div>
+            </div>
+        <br>
+        <br>
+        
+    </div>
+    
+    
+    <span id="quote-text"></span>
+    
+    
     <ul id="task-list">
-
-
+        
+        
     </ul>
     <button id="done-button">I'm done!</button>
-
+    
 </main>
 
 
 
-    <script type="module" src="timer.js"></script>
+<script type="module" src="timer.js"></script>
+<script type="module" src="../quote.js"></script>
 </body>
 </html>
