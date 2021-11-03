@@ -10,4 +10,5 @@ taskInput.addEventListener('submit', (e) => {
     e.preventDefault(); 
     let formData = new FormData(taskInput);
     addTask(formData); 
+    window.location.replace('../timer');
 }); 
