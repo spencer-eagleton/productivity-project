@@ -1,28 +1,37 @@
-import { getUser, displayUser, setUser, findById } from '../utils.js'; 
+
+import { displayUser, getUser } from '../utils.js'; 
+import { completeTask, incompleteTask } from '../timer-utils.js';
 
 const user = getUser();
-
 displayUser(user);
 
 const taskContainer = document.getElementById('task-list'); 
 const doneButton = document.getElementById('done-button'); 
 
 for (let item of user.tasks){
-    let li = document.createElement('li'); 
-    let checkbox = document.createElement('input'); 
-        
+    const li = document.createElement('li'); 
+    const checkbox = document.createElement('input'); 
     checkbox.setAttribute('type', 'checkbox'); 
-    checkbox.classList.add('complete'); 
-        
-    li.textContent = item.message;
-        
+        // checkbox.classList.add('checkbox'); 
+        // checkbox.value = item.id; 
+    li.textContent = item.id;
     li.append(checkbox); 
     taskContainer.append(li); 
-
+    
     if (item.completed === true){
-        checkbox.classList.add('completed'); 
+        checkbox.classList.add('completed');
     }
-
+    checkbox.addEventListener('change', () => {
+        let checkedItems = document.querySelectorAll('input[type=checkbox]:checked');
+        if (checkedItems){
+            completeTask(item.id);
+        } 
+        else {
+            incompleteTask(item.id);
+            checkbox.classList.remove('completed');
+        }
+    });
+} 
     checkbox.addEventListener('change', () => {
         completeTask(item.id); 
     }); 
@@ -45,9 +54,10 @@ function incompleteTask(taskId){
 
 // console.log(user);
 
+
 doneButton.addEventListener('click', () => {
-    window.location.replace('../results'); 
-}); 
+    window.location.replace('../results');
+});
 
     // find the corresponding item (findById)
     // change property to true
