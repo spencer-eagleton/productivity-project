@@ -50,6 +50,8 @@ export function findById(id, itemList) {
             return item;
         }
     }
+}
+
 export function clearStorage(){
     localStorage.removeItem('USER');
     window.location.replace('..');
