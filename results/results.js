@@ -13,14 +13,14 @@ const userObject = getUser();
 // loop through 'USER', for each completed: true render ___ onto divCompleted
     // else, if completed: false, render _____ onto divIncompleted
 for (let item of userObject.tasks){
-    if (userObject.tasks.completed === true){
+    if (item.completed === true){
         const h3Comp = document.createElement('h3');
-        h3Comp.textContent = item.tasks;
+        h3Comp.textContent = item.id;
         divCompleted.appendChild(h3Comp);
     }
-    else if (userObject.tasks.completed === false){
+    else if (item.completed === false){
         const h3Incomp = document.createElement('h3');
-        h3Incomp.textContent = item.tasks;
+        h3Incomp.textContent = item.id;
         divIncompleted.appendChild(h3Incomp);
     }
     resultsDisplay.append(divCompleted, divIncompleted);
