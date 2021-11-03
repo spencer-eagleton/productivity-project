@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { generateUser, setUser } from './utils.js';
-import { quotes, quote } from './quote.js';
+// import { quotes, quote } from './quote.js';
 
 
 
@@ -13,8 +13,6 @@ userForm.addEventListener('submit', (e)=>{
     const userObject = generateUser(formData);
     setUser(userObject);
     window.location.replace('./user-input');
-
-    
 });
 
 

@@ -2,7 +2,5 @@ ul {
     list-style-type:none;
 }
 
-:checked {
-    text-decoration: line-through;
-}
-
+/* .completed {
+    text-decoration: line-through;} */

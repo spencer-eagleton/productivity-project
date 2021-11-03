@@ -35,12 +35,21 @@ export function addTask(tasksForm){
     const tasks = [newTask1, newTask2, newTask3]; 
     
     for (let item of tasks){
-        userObject.tasks.push({ id: item, completed: false });  
+        userObject.tasks.push({ 
+            id: Math.ceil(Math.random() * 10000), 
+            message: item, 
+            completed: false });  
     }
 
     setUser(userObject); 
 }
 
+export function findById(id, itemList) {
+    for (let item of itemList) {
+        if (item.id === id){
+            return item;
+        }
+    }
 export function clearStorage(){
     localStorage.removeItem('USER');
     window.location.replace('..');
