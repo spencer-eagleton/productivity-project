@@ -35,14 +35,13 @@ export function addTask(task){
 }
 
 
-
-// export function findById(id, itemList) {
-//     for (let item of itemList) {
-//         if (item.id === id){
-//             return item;
-//         }
-//     }
-// }
+export function findById(id, itemList) {
+    for (let item of itemList) {
+        if (item.id === id){
+            return item;
+        }
+    }
+}
 
 export function clearStorage(){
     localStorage.removeItem('USER');

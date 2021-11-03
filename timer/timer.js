@@ -16,8 +16,9 @@ for (let item of user.tasks){
     taskContainer.append(li); 
     
     if (item.completed === true){
-        checkbox.classList.add('completed');
+        li.classList.add('completed');
     }
+
     checkbox.addEventListener('change', (e) => {
         if (e.target.checked){
             completeTask(item.id);
