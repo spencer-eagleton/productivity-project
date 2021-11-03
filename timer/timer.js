@@ -12,8 +12,6 @@ for (let item of user.tasks){
     const li = document.createElement('li'); 
     const checkbox = document.createElement('input'); 
     checkbox.setAttribute('type', 'checkbox'); 
-        // checkbox.classList.add('checkbox'); 
-        // checkbox.value = item.id; 
     li.textContent = item.id;
     li.append(checkbox); 
     taskContainer.append(li); 
@@ -21,9 +19,8 @@ for (let item of user.tasks){
     if (item.completed === true){
         checkbox.classList.add('completed');
     }
-    checkbox.addEventListener('change', () => {
-        let checkedItems = document.querySelectorAll('input[type=checkbox]:checked');
-        if (checkedItems){
+    checkbox.addEventListener('change', (e) => {
+        if (e.target.checked){
             completeTask(item.id);
         } 
         else {
@@ -44,6 +41,7 @@ function completeTask(taskId){
     checkedTask.completed = true; 
     setUser(user); 
 }
+
 
 function incompleteTask(taskId){
     const user = getUser(); 
@@ -66,3 +64,4 @@ doneButton.addEventListener('click', () => {
     // if an item has been selected: 
     // mark that item as user.tasks.completed === true; 
     // then, send user to the next page
+
