@@ -2,7 +2,6 @@ ul {
     list-style-type:none;
 }
 
-li {
-    display: flex;
-    flex-direction: row;
+:checked {
+    text-decoration: line-through;
 }
