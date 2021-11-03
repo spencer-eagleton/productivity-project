@@ -44,4 +44,10 @@ export function addTask(tasksForm){
     setUser(userObject); 
 }
 
-
+export function findById(id, itemList) {
+    for (let item of itemList) {
+        if (item.id === id){
+            return item;
+        }
+    }
+}
