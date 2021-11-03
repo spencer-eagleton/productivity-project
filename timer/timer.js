@@ -22,10 +22,12 @@ for (let item of user.tasks){
     checkbox.addEventListener('change', (e) => {
         if (e.target.checked){
             completeTask(item.id);
+            li.style.textDecoration = 'line-through';
         } 
         else {
             incompleteTask(item.id);
             checkbox.classList.remove('completed');
+            li.style.textDecoration = 'none';
         }
     });
 } 
@@ -38,7 +40,6 @@ doneButton.addEventListener('click', () => {
 
 let timer = 0;
 const progressBar = document.getElementById('progress-bar');
-
 const duration = 2700;
 const interval = 1000;
    
