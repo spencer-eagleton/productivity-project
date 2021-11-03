@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bar-background {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border: 1px solid black;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+#progress-bar{
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    position: absolute;
+    
+
+}
