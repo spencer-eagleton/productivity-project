@@ -19,11 +19,14 @@ export function getUser(){
 export function displayUser(userObject){
     const userDisplay = document.getElementById('user-display');
     const logo = document.getElementById('logo'); 
+    
     const userName = document.createElement('span');
     const img = document.createElement('img'); 
+    
     img.setAttribute('id', 'hourglass'); 
     img.src = '../assets/hourglass.png';
     userName.textContent = `Hello, ${userObject.name}!`;
+    
     logo.append(img); 
     userDisplay.append(userName);
 }
@@ -49,13 +52,13 @@ export function addTask(tasksForm){
     setUser(userObject); 
 }
 
-export function findById(id, itemList) {
-    for (let item of itemList) {
-        if (item.id === id){
-            return item;
-        }
-    }
-}
+// export function findById(id, itemList) {
+//     for (let item of itemList) {
+//         if (item.id === id){
+//             return item;
+//         }
+//     }
+// }
 
 export function clearStorage(){
     localStorage.removeItem('USER');
