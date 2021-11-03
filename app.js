@@ -1,5 +1,7 @@
 // import functions and grab DOM elements
 import { generateUser, setUser } from './utils.js';
+import { quotes, quote } from './quote.js';
+
 
 
 // initialize global state
@@ -15,10 +17,16 @@ userForm.addEventListener('submit', (e)=>{
     
 });
 
+
+
 // set event listeners 
+
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+
+
+
 
   
   
