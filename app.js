@@ -11,8 +11,6 @@ userForm.addEventListener('submit', (e)=>{
     const userObject = generateUser(formData);
     setUser(userObject);
     window.location.replace('./user-input');
-
-    
 });
 
 // set event listeners 
