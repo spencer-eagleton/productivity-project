@@ -151,7 +151,7 @@ ul {
     justify-content: center;
 }
 
-#half-hour, #one-hour, #two-hours {
+/* #half-hour, #one-hour, #two-hours {
     margin: 10px;
     padding: 5px;
     border: grey; 
@@ -180,7 +180,7 @@ ul {
     border-bottom: 5px solid rgba(71, 36, 6, 0.63);
     opacity: 1; 
     transform: scale(1, 1);
-}
+} */
 
 #start-button{
     height: 50px; 
@@ -190,7 +190,7 @@ ul {
 
 #start-button:hover{
     cursor: pointer;
-    border: 10px solid green; 
+    border: 15px solid rgba(71, 36, 6, 0.63);
     opacity: 1; 
     transform: scale(1, 1);
 }
