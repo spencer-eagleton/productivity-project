@@ -61,13 +61,10 @@ a:link, a:visited {
     margin: 20px;
     background-color: rgba(217, 233, 208, 0.8);
     font-family: 'Zen Maru Gothic', sans-serif;
-}
-
-#name-input-button {
+    border: none;
     color: #FFF;
     transition: all 0.3s;
-    border: none;
-  }
+}
 
 
   #name-input-button:hover {
