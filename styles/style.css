@@ -13,6 +13,7 @@ header {
 
 #hourglass-image{
     height: 100%;
+    animation: pulse 5s infinite ease-in-out;
 }
 
 #main-h1{
@@ -37,8 +38,6 @@ form {
     margin: 20px;
 }
 
-
-
 footer {
     margin: 25px;
     text-align: center;
@@ -52,8 +51,6 @@ a:hover{
 a:link, a:visited {
     color: white;
 }
-
-
 
 
 #name-input-button {
@@ -76,3 +73,21 @@ a:link, a:visited {
     transform: scale(1, 1); 
   }
 
+  @keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+
+  }
