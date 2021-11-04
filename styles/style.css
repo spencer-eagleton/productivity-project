@@ -1,6 +1,6 @@
 body{
     background: green;
-    background-image: url(../assets/grassdew.jpg);
+    background-image: url(../assets/frosty.jpg);
     background-size: cover; 
     color: white;
     font-family: 'Zen Maru Gothic', sans-serif;
@@ -37,16 +37,7 @@ form {
     margin: 20px;
 }
 
-#name-input-button {
-    border-radius: 30%;
-    padding: 10px; 
-    margin: 20px;
-    background-color: rgba(217, 233, 208, 0.8);
-}
 
-#name-input-button:hover{
-    cursor: pointer;
-}
 
 footer {
     margin: 25px;
@@ -61,3 +52,30 @@ a:hover{
 a:link, a:visited {
     color: white;
 }
+
+
+
+
+#name-input-button {
+    padding: 10px; 
+    margin: 20px;
+    background-color: rgba(217, 233, 208, 0.8);
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+#name-input-button {
+    color: #FFF;
+    transition: all 0.3s;
+    border: none;
+  }
+
+
+  #name-input-button:hover {
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+
