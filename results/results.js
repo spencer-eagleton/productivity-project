@@ -6,8 +6,6 @@ const divCompleted = document.getElementById('completed-tasks');
 const divIncompleted = document.getElementById('incompleted-tasks');
 const homeButton = document.getElementById('home-button');
 const newTaskButton = document.getElementById('new-task-button');
-// display user on header
-// displayUser();
 // call getUser() to update results page with 'USER'
 const userObject = getUser();
 // loop through 'USER', for each completed: true render ___ onto divCompleted
@@ -36,3 +34,5 @@ newTaskButton.addEventListener('click', ()=> {
     window.location.replace('../user-input');
 });
 
+
+// const searchParams = new URLSearchParams(window.location.search);

@@ -1,0 +1,26 @@
+#bar-background {
+    width: 90vw;
+    height: 20px;
+    position: relative;
+    margin: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0.5px 0.5px 5px black;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(105, 180, 121); */
+  
+    position: absolute;
+    transition : width 5s ease;
+    border-radius: 5px;
+    background-image: linear-gradient(#9ae797, #67ac61);
+    box-shadow: inset 0px 0px 3px rgb(70, 70, 70);
+}
+
+@keyframes progress-animation {
+    0% { width: 0%;}
+    100% {width: 100%}
+}
