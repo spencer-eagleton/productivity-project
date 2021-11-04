@@ -50,55 +50,6 @@ header {
     margin: 25px;
 }
 
-#task1 {
-    position: absolute;
-    width: 373px;
-    height: 74px;
-    left: 533px;
-    top: 438px;
-
-    background: rgba(196, 196, 196, 0.83);
-    border: 6px solid #000000;
-    box-sizing: border-box;
-    border-radius: 18px;
-}
-
-#task2 {
-    position: absolute;
-    width: 373px;
-    height: 74px;
-    left: 533px;
-    top: 559px;
-
-    background: rgba(196, 196, 196, 0.83);
-    border: 6px solid #000000;
-    box-sizing: border-box;
-    border-radius: 18px;
-}
-
-#task3 {
-    position: absolute;
-    width: 373px;
-    height: 74px;
-    left: 533px;
-    top: 694px;
-
-    background: rgba(196, 196, 196, 0.83);
-    border: 6px solid #000000;
-    box-sizing: border-box;
-    border-radius: 18px;
-}
-
-/* #task-input-button {
-    position: absolute;
-    width: 319px;
-    height: 60px;
-    left: 560px;
-    top: 866px;
-
-    background: #72DCF3;
-    border-radius: 13px;
-} */
 
 @keyframes pulse {
     20% {
@@ -120,4 +71,9 @@ header {
   }
 ul {
     list-style-type:none;
+}
+
+#start-button {
+    width: 100px;
+    height: 100px;
 }
