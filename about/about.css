@@ -2,24 +2,22 @@ body{
     background: linear-gradient(180deg, #9DCF94 0%, #11A797 98.96%);
     position: relative;
     width: 1440px;
-    height: 1000px;
-    
-    
+    height: 1000px;  
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .logo{
-    position: absolute;
-width: 180px;
-height: 53px;
-left: 37px;
-top: 15px;
-
-font-family: Gilroy;
-font-style: normal;
-font-weight: 800;
-font-size: 48px;
-line-height: 59px;
-
+    height: 53px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
 color: #FAFBFF;
 
 }
