@@ -1,32 +1,28 @@
+/* font-family: 'Monoton', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Zen Maru Gothic', sans-serif; */
+
+body {
+    background-image: url('../assets/light.jpg');
+    background-size: cover;
+}
+
 header {
     display: flex; 
-    justify-content: space-between; 
+    justify-content: space-between;
+    align-items: center; 
     width: 100%; 
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-#hourglass {
-    animation: pulse 5s infinite ease-in-out;
-}
-
-#main-container {
-    /* position: absolute; */
-    /* display: flex; 
-    flex-direction: column; 
-    width: 1440px;
-    height: 1042px;
-    left: 0px;
-    top: 0px; */
-    /* background-image:  */
-}
 
 #logo {
-    /* position: absolute;
+    /* position: absolute; */
     width: 187px;
     height: 78px;
     left: 17px;
-    top: 29px; */
+    top: 29px;
 
-    font-family: SF UI Text;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -42,12 +38,40 @@ header {
     left: 918px;
     top: 22px; */
 
-    font-family: SF UI Text;
+    font-family: 'Zen Maru Gothic', cursive;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 57px;
     margin: 25px;
+}
+
+
+#main-container {
+    /* position: absolute; */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: start;
+    align-items: center;
+    width: 90vw;
+    height: 85vh;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+#task-form-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90vw;
+}
+
+#task-list-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 90vw;
 }
 
 
@@ -69,11 +93,16 @@ header {
     }
 
   }
+
+  #hourglass {
+    animation: pulse 5s infinite ease-in-out;
+}
+  
 ul {
     list-style-type:none;
 }
 
-#start-button {
+#task-input-button {
     width: 100px;
     height: 100px;
 }
