@@ -19,40 +19,45 @@
         <div id="user-display"></div>
     </header>
     <main id="main-container">
-        <div id="message-container">
-            <h2 id="greeting">What do you want to get done today?</h2>
-            <h3>You have five hours to work.</h3>
-        </div>
-        <div id="task-form-container">
-            <form id="task-input-form">
-                <label>
-                    <input type="text" name="task-input" id="task-input" placeholder="Input Task Here">
-                </label>
-                <button type="submit" id="task-input-button">Add Task</button>
-            </form>
-        </div>
-        <div id="task-list-container">
-            <ul id="task-list">
-                
-            </ul>
+        <div class="tasks">
+            <div id="message-container">
+                <h2 id="greeting">What do you want to get done today?</h2>
+                <p>Add your to-do list below, then start your work timer.</p>
+            </div>
+            <div id="task-form-container">
+                <form id="task-input-form">
+                    <label>
+                        <input type="text" name="task-input" id="task-input" placeholder="Input Task Here...">
+                    </label>
+                    <button type="submit" id="task-input-button">Add Task</button>
+                </form>
+            </div>
+            <div id="task-list-container">
+                <ul id="task-list">
+                    
+                </ul>
+            </div>
         </div>
             <div id="time-container">
                 <form id="time-input-form">
                     <legend>
                         <h2>How much time do you have?</h2>
                     </legend>
-                    <label>
-                        <input type="button" name="half-hour" id="half-hour" value="30 Minutes">
-                    </label>
-                    <label>
-                        <input type="button" name="one-hour" id="one-hour" value="One Hour">
-                    </label>
-                    <label>
-                        <input type="button" name="two-hours" id="two-hours" value="Two Hours">
-                    </label>
+                    <div id="time-buttons">
+                        <label>
+                            <input type="button" name="half-hour" id="half-hour" value="30 Minutes">
+                        </label>
+                        <label>
+                            <input type="button" name="one-hour" id="one-hour" value="One Hour">
+                        </label>
+                        <label>
+                            <input type="button" name="two-hours" id="two-hours" value="Two Hours">
+                        </label>
+                    </div>
                 </form>
+                <button id="start-button">I'm ready to begin</button>
             </div>
-        <button id="start-button">I'm ready to begin</button>
+
     </main>
     <footer>
         <a href="./about/index.html">About the founders</a>
