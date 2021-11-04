@@ -26,15 +26,6 @@ form.addEventListener('submit', (e) => {
 
 const taskContainer = document.getElementById('task-list'); 
 
-// for (let item of user.tasks){
-//     const li = document.createElement('li'); 
-//     li.textContent = item.message;
-//     taskContainer.append(li);
-// }
-
-startButton.addEventListener('click', ()=> {
-    window.location.replace('../timer');
-});
 
 for (let item of user.tasks){
     if (item.completed === false){
@@ -43,3 +34,13 @@ for (let item of user.tasks){
         taskContainer.append(li);
     }
 }
+
+startButton.addEventListener('click', ()=> {
+    if (user.tasks.length <= 0){
+        startButton.disabled = true;
+        window.alert('Add a task!');
+    }
+    else {
+        window.location.replace('../timer');
+    }
+});
