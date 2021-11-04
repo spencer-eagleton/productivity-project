@@ -57,9 +57,15 @@ footer {
     backdrop-filter: blur(2px);
     padding: 10px;
     border-radius: 5px;
-    box-shadow:  0px 0px 4px rgba(36, 36, 36, 0.315);
+    /* box-shadow:  0px 0px 4px rgba(36, 36, 36, 0.315); */
     width: max-content;
     margin-right: auto;
     margin-left: auto;
     margin-top: 1rem;
 }
+
+#top {
+    font-size: 20px;
+    font-family: 'zen maru gothic', sans-serif;
+}
+
