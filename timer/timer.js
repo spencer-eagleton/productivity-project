@@ -51,7 +51,7 @@ let intervalId = setInterval(()=>{
     if (timer === (duration / 100) + 1){
         clearInterval(intervalId);
 
-        // window.location.replace('../results');
+        window.location.replace('../results');
         window.alert('Time for a break. You deserve it!');
     }
 }, 1000);
