@@ -6,6 +6,15 @@ body{
     font-family: 'Zen Maru Gothic', sans-serif;
 }
 
+header {
+    display: flex;
+    align-items: center;
+}
+
+#hourglass-image{
+    height: 100%;
+}
+
 #main-h1{
     text-align: center;
 }
