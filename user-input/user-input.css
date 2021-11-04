@@ -5,6 +5,8 @@ font-family: 'Zen Maru Gothic', sans-serif; */
 body {
     background-image: url('../assets/light.jpg');
     background-size: cover;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: rgba(71, 36, 6, 0.63);
 }
 
 header {
@@ -48,14 +50,26 @@ header {
 
 
 #main-container {
-    /* position: absolute; */
     display: flex; 
     flex-direction: column; 
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
-    width: 90vw;
-    height: 85vh;
+    /* height: 85vh; */
     font-family: 'Zen Maru Gothic', sans-serif;
+    /* background-color: pink; */
+}
+
+.tasks {
+    /* background-color: red; */
+    background-color: rgba(151, 154, 150, 0.42);  
+    backdrop-filter: blur(5px);
+}
+#message-container {
+    /* background-color: blue; */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
 }
 
 #task-form-container {
@@ -64,14 +78,33 @@ header {
     flex-direction: column;
     position: relative;
     width: 90vw;
+    /* background-color: green; */
+}
+
+#task-input {
+    height: 30px;
+    width: 30vw;
+}
+
+#task-input-button {
+    height: 30px;
+    border: grey; 
+    color:rgba(71, 36, 6, 0.63);
+}
+
+#task-input-button:hover{
+    cursor: pointer;
+    border-top: 5px solid rgba(71, 36, 6, 0.63);
+    border-bottom: 5px solid rgba(71, 36, 6, 0.63);
+    opacity: 1; 
+    transform: scale(1, 1);
 }
 
 #task-list-container {
     display: flex;
     flex-direction: column;
-    position: relative;
     align-items: center;
-    width: 90vw;
+    /* background-color: purple; */
 }
 
 
@@ -102,7 +135,63 @@ ul {
     list-style-type:none;
 }
 
-#task-input-button {
-    width: 100px;
-    height: 100px;
+#time-container{
+    background-color: rgba(151, 154, 150, 0.42);  
+    backdrop-filter: blur(5px);
+    width: 85%;
+    margin: 10px; 
+    padding: 25px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
+
+#time-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+/* #half-hour, #one-hour, #two-hours {
+    margin: 10px;
+    padding: 5px;
+    border: grey; 
+    color:rgba(71, 36, 6, 0.63);
+}
+
+#half-hour:hover{
+    cursor: pointer;
+    border-top: 5px solid rgba(71, 36, 6, 0.63);
+    border-bottom: 5px solid rgba(71, 36, 6, 0.63);
+    opacity: 1; 
+    transform: scale(1, 1);
+}
+
+#one-hour:hover{
+    cursor: pointer;
+    border-top: 5px solid rgba(71, 36, 6, 0.63);
+    border-bottom: 5px solid rgba(71, 36, 6, 0.63);
+    opacity: 1; 
+    transform: scale(1, 1);
+}
+
+#two-hours:hover{
+    cursor: pointer;
+    border-top: 5px solid rgba(71, 36, 6, 0.63);
+    border-bottom: 5px solid rgba(71, 36, 6, 0.63);
+    opacity: 1; 
+    transform: scale(1, 1);
+} */
+
+#start-button{
+    height: 50px; 
+    margin-top: 20px; 
+    border: 10px solid grey;
+}
+
+#start-button:hover{
+    cursor: pointer;
+    border: 15px solid rgba(71, 36, 6, 0.63);
+    opacity: 1; 
+    transform: scale(1, 1);
+}
+
