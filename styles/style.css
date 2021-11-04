@@ -13,6 +13,7 @@ header {
 
 #hourglass-image{
     height: 100%;
+    animation: pulse 5s infinite ease-in-out;
 }
 
 #main-h1{
@@ -37,17 +38,6 @@ form {
     margin: 20px;
 }
 
-#name-input-button {
-    border-radius: 30%;
-    padding: 10px; 
-    margin: 20px;
-    background-color: rgba(217, 233, 208, 0.8);
-}
-
-#name-input-button:hover{
-    cursor: pointer;
-}
-
 footer {
     margin: 25px;
     text-align: center;
@@ -61,3 +51,43 @@ a:hover{
 a:link, a:visited {
     color: white;
 }
+
+
+#name-input-button {
+    padding: 10px; 
+    margin: 20px;
+    background-color: rgba(217, 233, 208, 0.8);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    border: none;
+    color: #FFF;
+    transition: all 0.3s;
+}
+
+
+  #name-input-button:hover {
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+
+  @keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+
+  }

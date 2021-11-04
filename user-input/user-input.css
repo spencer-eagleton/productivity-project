@@ -2,21 +2,19 @@
 font-family: 'Permanent Marker', cursive;
 font-family: 'Zen Maru Gothic', sans-serif; */
 
-/* body {
+body {
     background-image: url('../assets/light.jpg');
     background-size: cover;
-} */
+}
 
 header {
     display: flex; 
-    justify-content: space-between; 
+    justify-content: space-between;
+    align-items: center; 
     width: 100%; 
     font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-#hourglass {
-    animation: pulse 5s infinite ease-in-out;
-}
 
 #logo {
     /* position: absolute; */
@@ -50,19 +48,31 @@ header {
 
 
 #main-container {
-    position: absolute;
+    /* position: absolute; */
     display: flex; 
     flex-direction: column; 
-    width: 1440px;
-    height: 1042px;
-    left: 0px;
-    top: 0px;
+    justify-content: start;
+    align-items: center;
+    width: 90vw;
+    height: 85vh;
     font-family: 'Zen Maru Gothic', sans-serif;
-    background-image: url('../assets/light.jpg');
-    background-size: cover;
 }
 
+#task-form-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90vw;
+}
 
+#task-list-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 90vw;
+}
 
 
 @keyframes pulse {
@@ -83,11 +93,16 @@ header {
     }
 
   }
+
+  #hourglass {
+    animation: pulse 5s infinite ease-in-out;
+}
+  
 ul {
     list-style-type:none;
 }
 
-#start-button {
+#task-input-button {
     width: 100px;
     height: 100px;
 }

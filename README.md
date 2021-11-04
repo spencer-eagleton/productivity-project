@@ -10,3 +10,7 @@
 
 ### Photo Credits
 *   User-input background: Jen We, 2017
+
+### Photo Credit
+Dew grass: Aaron Burden
+Frosty plant: Katie Moum
