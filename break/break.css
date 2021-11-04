@@ -1,4 +1,4 @@
-#bar-background {
+/* #bar-background {
     width: 90vw;
     height: 20px;
     position: relative;
@@ -13,7 +13,7 @@
     height: 100%;
     /* background-color: rgb(105, 180, 121); */
   
-    position: absolute;
+    /* position: absolute;
     transition : width 5s ease;
     border-radius: 5px;
     background-image: linear-gradient(#9ae797, #67ac61);
@@ -23,4 +23,4 @@
 @keyframes progress-animation {
     0% { width: 0%;}
     100% {width: 100%}
-}
+} */
