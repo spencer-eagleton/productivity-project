@@ -100,3 +100,59 @@ footer {
     background-image: linear-gradient(#b4d3df67, #7a8f7977);
     box-shadow: inset 0px 0px 2px rgb(184, 184, 184);
 }
+
+#quote-text{
+    font-size: 28pt;
+
+    
+        animation: fadeIn ease 4s;
+        -webkit-animation: fadeIn ease 4s;
+        -moz-animation: fadeIn ease 4s;
+        -o-animation: fadeIn ease 4s;
+        -ms-animation: fadeIn ease 4s;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-moz-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-webkit-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-o-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-ms-keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+      }
+      
+}
