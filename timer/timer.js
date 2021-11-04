@@ -45,7 +45,7 @@ let timer = 0;
 const progressBar = document.getElementById('progress-bar');
 const duration = 2700;
 const interval = 1000;
-   
+
 let intervalId = setInterval(()=>{
     timer++;
     progressBar.style.width = `${timer * 100 / duration }%`;
