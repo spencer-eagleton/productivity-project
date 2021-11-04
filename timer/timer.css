@@ -5,3 +5,31 @@ ul {
 .completed {
     display: none;
 }
+
+body{
+    background: green;
+    background-image: url(../assets/grassdew.jpg);
+    background-size: cover; 
+    color: white;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+#hourglass-image{
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
