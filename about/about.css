@@ -2,24 +2,27 @@ body{
     background: linear-gradient(180deg, #9DCF94 0%, #11A797 98.96%);
     position: relative;
     width: 1440px;
-    height: 1000px;
-    
-    
+    height: 1000px;  
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#hourglass-image{
+    height: 100%;
+    animation: pulse 5s infinite ease-in-out;
 }
 
 .logo{
-    position: absolute;
-width: 180px;
-height: 53px;
-left: 37px;
-top: 15px;
-
-font-family: Gilroy;
-font-style: normal;
-font-weight: 800;
-font-size: 48px;
-line-height: 59px;
-
+    height: 53px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
 color: #FAFBFF;
 
 }
@@ -40,6 +43,12 @@ line-height: 78px;
 
 color: #FAFBFF;
 
+}
+
+#audio {
+    position: relative;
+    top: 200px;
+    left: 600px;
 }
 
 .team-slogan{
@@ -254,6 +263,7 @@ color: #FFFCFC;
  
 }
 
+
 a.nav-link:link{
     color: #ffffff;
     text-decoration: none;
@@ -276,4 +286,22 @@ a.nav-link:active{
 h1{
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: bold;
+
+@keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+
 }
