@@ -1,43 +1,63 @@
-#main-container {
-    /* position: absolute; */
-    width: 1440px;
-    height: 1024px;
-    left: 0px;
-    top: 0px;
-    /* background: url(.jpg); */
+body{
+    background: green;
+    background-image: url(../assets/frosty.jpg);
+    background-size: cover; 
+    color: white;
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-#welcome-div {
-    /* position: absolute; */
-    width: 993px;
-    height: 78px;
-    left: 223px;
-    top: 283px;
-    font-family: SF UI Text;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 57px;
+header {
+    display: flex;
+    align-items: center;
 }
 
-form > input {
-    /* position: absolute; */
-    width: 685px;
-    height: 114px;
-    left: 240px;
-    top: 544px;
+#hourglass-image{
+    height: 100%;
 }
 
-form > button {
-    /* position: absolute; */
-    width: 219px;
-    height: 80px;
-    left: 941px;
-    top: 565px;
+#main-h1{
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name-input {
+    padding: 10px; 
+    margin: 20px;
+}
+
+#name-input-button {
     border-radius: 30%;
+    padding: 10px; 
+    margin: 20px;
+    background-color: rgba(217, 233, 208, 0.8);
+}
+
+#name-input-button:hover{
+    cursor: pointer;
 }
 
 footer {
-    text-align: center;
     margin: 25px;
+    text-align: center;
+}
+
+a:hover{
+    cursor: pointer;
+    color: green;
+}
+
+a:link, a:visited {
+    color: white;
 }
