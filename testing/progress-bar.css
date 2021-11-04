@@ -3,31 +3,39 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
+.container {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:  0px 0px 4px rgba(56, 56, 56, 0.479);
+   }
 #bar-background {
     width: 100%;
-    height: 20px;
+    height: 40px;
     position: relative;
+    right: 10px;
     
     margin: 10px;
     margin-right: 10px;
     border-radius: 5px;
-    box-shadow: inset 0.5px 0.5px 5px black;
+    box-shadow: inset 0.5px 0.5px 5px rgba(54, 54, 54, 0.712);
 }
 
 #progress-bar{
     width: 0%;
-    height: 20px;
+    height: 38px;
     /* background-color: rgb(105, 180, 121); */
   
     position: absolute;
+    top: 1px;
     transition : width 5s ease;
     border-radius: 5px;
-    background-image: linear-gradient(#9ae797, #67ac61);
-    box-shadow: inset 0px 0px 3px rgb(70, 70, 70);
+    background-image: linear-gradient(#b4d3df67, #7a8f7977);
+    box-shadow: inset 0px 0px 2px rgb(184, 184, 184);
 }
     
     
     
 
-}
+
