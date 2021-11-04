@@ -7,6 +7,8 @@ body {
     background-size: cover;
     font-family: 'Zen Maru Gothic', sans-serif;
     color: rgba(71, 36, 6, 0.63);
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -19,7 +21,6 @@ header {
 
 
 #logo {
-    /* position: absolute; */
     width: 187px;
     height: 78px;
     left: 17px;
@@ -34,12 +35,6 @@ header {
 }
 
 #user-display {
-    /* position: absolute;
-    width: 488px;
-    height: 75px;
-    left: 918px;
-    top: 22px; */
-
     font-family: 'Zen Maru Gothic', cursive;
     font-style: normal;
     font-weight: bold;
@@ -54,18 +49,14 @@ header {
     flex-direction: column; 
     justify-content: flex-start;
     align-items: center;
-    /* height: 85vh; */
     font-family: 'Zen Maru Gothic', sans-serif;
-    /* background-color: pink; */
 }
 
 .tasks {
-    /* background-color: red; */
     background-color: rgba(151, 154, 150, 0.42);  
     backdrop-filter: blur(5px);
 }
 #message-container {
-    /* background-color: blue; */
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -78,7 +69,6 @@ header {
     flex-direction: column;
     position: relative;
     width: 90vw;
-    /* background-color: green; */
 }
 
 #task-input {
@@ -104,7 +94,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: purple; */
 }
 
 
@@ -151,37 +140,6 @@ ul {
     justify-content: center;
 }
 
-/* #half-hour, #one-hour, #two-hours {
-    margin: 10px;
-    padding: 5px;
-    border: grey; 
-    color:rgba(71, 36, 6, 0.63);
-}
-
-#half-hour:hover{
-    cursor: pointer;
-    border-top: 5px solid rgba(71, 36, 6, 0.63);
-    border-bottom: 5px solid rgba(71, 36, 6, 0.63);
-    opacity: 1; 
-    transform: scale(1, 1);
-}
-
-#one-hour:hover{
-    cursor: pointer;
-    border-top: 5px solid rgba(71, 36, 6, 0.63);
-    border-bottom: 5px solid rgba(71, 36, 6, 0.63);
-    opacity: 1; 
-    transform: scale(1, 1);
-}
-
-#two-hours:hover{
-    cursor: pointer;
-    border-top: 5px solid rgba(71, 36, 6, 0.63);
-    border-bottom: 5px solid rgba(71, 36, 6, 0.63);
-    opacity: 1; 
-    transform: scale(1, 1);
-} */
-
 #start-button{
     height: 50px; 
     margin-top: 20px; 
@@ -195,3 +153,13 @@ ul {
     transform: scale(1, 1);
 }
 
+footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > a:link, footer > a:visited{
+    color: white;
+}
