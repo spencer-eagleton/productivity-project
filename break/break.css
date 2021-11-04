@@ -11,7 +11,6 @@
 .progress-bar{
     width: 100%;
     height: 100%;
-  
     position: absolute;
     transition : width 5s ease;
     border-radius: 5px;
