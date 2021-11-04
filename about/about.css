@@ -11,6 +11,11 @@ header {
     align-items: center;
 }
 
+#hourglass-image{
+    height: 100%;
+    animation: pulse 5s infinite ease-in-out;
+}
+
 .logo{
     height: 53px;
     font-family: Gilroy;
@@ -250,4 +255,22 @@ color: #FFFCFC;
     background: url(spencer.jpg);
     border-radius: 68px;
  
+}
+
+@keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
 }
