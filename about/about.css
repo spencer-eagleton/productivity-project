@@ -42,6 +42,12 @@ color: #FAFBFF;
 
 }
 
+#audio {
+    position: relative;
+    top: 200px;
+    left: 600px;
+}
+
 .team-slogan{
     position: absolute;
 width: 520px;
