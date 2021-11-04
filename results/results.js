@@ -1,4 +1,4 @@
-import { getUser, clearStorage } from '../utils.js';
+import { getUser, clearStorage, displayUser } from '../utils.js';
 
 // grab DOM elements needed for results page
 const resultsDisplay = document.getElementById('results-display');
@@ -7,8 +7,12 @@ const divIncompleted = document.getElementById('incompleted-tasks');
 const homeButton = document.getElementById('home-button');
 const newTaskButton = document.getElementById('new-task-button');
 const timerButton = document.getElementById('timer-button');
+
 // call getUser() to update results page with 'USER'
 const userObject = getUser();
+
+displayUser(userObject);
+
 // loop through 'USER', for each completed: true render ___ onto divCompleted
     // else, if completed: false, render _____ onto divIncompleted
 for (let item of userObject.tasks){

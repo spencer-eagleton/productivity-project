@@ -1,20 +1,23 @@
 body{
   
-    background: linear-gradient(180deg, #9DCF94 0%, #11A797 98.96%);
-    position: relative;
-    width: 1440px;
-    height: 1000px; 
+    background-image: url('../assets/sonny-sixteen-uGM5-ICZZbQ-unsplash.jpg');
+    background-size: cover;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   
 }
-
+main{
+    margin: auto;
+}
 .logo{
     color: white;
-    
-    font-family: Gilroy;
-font-style: normal;
-font-weight: 800;
-font-size: 48px;
-line-height: 59px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
 
 }
 
@@ -34,20 +37,19 @@ font-size: 20pt;
 
 
 h1{
-    color: black;
-    font-family: Gilroy;
-font-style: normal;
-font-weight: 800;
-
-line-height: 59px;
-   
+    color: rgba(255, 255, 255, 0.74);
+    font-family: 'Zen Maru Gothic', sans-serif;;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 59px;
+    
 
 }
 
 
 h3{
 color: black;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family: 'Zen Maru Gothic', sans-serif;
 font-weight: 800;
 text-align: center;
 line-height: 30px;
@@ -55,73 +57,76 @@ font-size: 30px;
 }
 
 #results-display{
-    position: absolute;
-width: 689px;
-height: 448px;
-left: 375px;
-top: 80px;
 
-background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
-border-radius: 27px;
-
-
+background-color: rgba(255, 255, 255, .15);  
+backdrop-filter: blur(2px);
+border-radius: 2px;
+width: 600px;
+min-height: 500px;
+}
+#button-section{
+    display: flex;
+    justify-content: center;
+    
 }
 
+
+
 #home-button{
-    position: absolute;
-    width: 318px;
-    height: 91px;
-    left: 375px;
-    top: 600px;
-    
-    background: #2C5CB9;
-    border-radius: 11px;
-    color: white; 
-    
-    font-family: SF UI Text;
-font-style: normal;
-font-weight: bold;
-
-
+    padding: 10px; 
+    margin: 20px;
+    background-color: rgba(217, 233, 208, 0.8);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    border: none;
+    color: #FFF;
+    transition: all 0.3s;
+}
+#home-button:hover{
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    opacity: 1; 
+    transform: scale(1, 1);
 }
 
 #new-task-button{
-    position: absolute;
-width: 318px;
-height: 91px;
-left: 746px;
-top: 600px;
-
-background: #2C5CB9;
-color: white;
-
-border-radius: 11px;
-
-font-family: SF UI Text;
-font-style: normal;
-font-weight: bold;
-
+    padding: 10px; 
+    margin: 20px;
+    background-color: rgba(217, 233, 208, 0.8);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    border: none;
+    color: #FFF;
+    transition: all 0.3s;
+}
+#new-task-button:hover{
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    opacity: 1; 
+    transform: scale(1, 1);
 }
 
 
 
 
 #timer-button{
-    position: absolute;
-width: 318px;
-height: 91px;
-left: 560px;
-top: 710px;
-
-background: #2C5CB9;
-color: white;
-
-border-radius: 11px;
-
-font-family: SF UI Text;
-font-style: normal;
-font-weight: bold;
-
+    padding: 10px; 
+    margin: 20px;
+    background-color: rgba(217, 233, 208, 0.8);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    border: none;
+    color: #FFF;
+    transition: all 0.3s;
+}
+#timer-button:hover{
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    opacity: 1; 
+    transform: scale(1, 1);
 }
 
 
@@ -154,3 +159,23 @@ font-weight: bold;
     100% {width: 100%}
 }
 
+
+
+a.nav-link:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav-link:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+a.nav-link:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav-link:active{
+    color: #ffffff;
+    text-decoration: none;
+}
