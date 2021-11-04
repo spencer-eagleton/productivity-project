@@ -46,7 +46,6 @@ const interval = 1000;
 let intervalId = setInterval(()=>{
     timer++;
  
-    console.log(timer);
     progressBar.style.width = `${timer * (duration / interval)}%`;
     if (timer === (duration / 100) + 1){
         clearInterval(intervalId);

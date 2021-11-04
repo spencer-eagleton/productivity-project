@@ -106,6 +106,26 @@ font-weight: bold;
 
 }
 
+#break-button{
+    position: absolute;
+width: 318px;
+height: 91px;
+left: 560px;
+top: 710px;
+
+background: #2C5CB9;
+color: white;
+
+border-radius: 11px;
+
+font-family: SF UI Text;
+font-style: normal;
+font-weight: bold;
+
+}
+
+
+
 #bar-background {
     width: 50vw;
     height: 20px;

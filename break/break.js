@@ -3,11 +3,11 @@ const progressBar = document.querySelector('.progress-bar');
 const timeSpan = document.querySelector('.time-span');
 
 startButton.addEventListener('click', () => {
-    let interval = 60;
+    let interval = 10;
 
     var countDown = setInterval(() => {
         interval--;
-        let progressWidth = interval / 60 * 100;
+        let progressWidth = interval / 10 * 100;
 
         if (interval > 0){
             progressBar.style.width = progressWidth + '%';
@@ -16,6 +16,7 @@ startButton.addEventListener('click', () => {
             clearInterval(countDown);
             progressBar.style.width = '0%';
             timeSpan.innerHTML = 'Break Over!';
+            window.location.replace('../results');
         }
     }, 1000);
 });
