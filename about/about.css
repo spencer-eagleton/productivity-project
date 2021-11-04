@@ -263,6 +263,30 @@ color: #FFFCFC;
  
 }
 
+
+a.nav-link:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav-link:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+a.nav-link:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav-link:active{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: bold;
+
 @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
@@ -279,4 +303,5 @@ color: #FFFCFC;
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
+
 }
