@@ -1,39 +1,93 @@
-#main-container {
-    position: absolute;
-    width: 1440px;
-    height: 1024px;
-    left: 0px;
-    top: 0px;
-    /* background: url(.jpg); */
+body{
+    background: green;
+    background-image: url(../assets/frosty.jpg);
+    background-size: cover; 
+    color: white;
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-#welcome-div {
-    position: absolute;
-    width: 993px;
-    height: 78px;
-    left: 223px;
-    top: 283px;
-    font-family: SF UI Text;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 57px;
+header {
+    display: flex;
+    align-items: center;
 }
 
-form > input {
-    position: absolute;
-    width: 685px;
-    height: 114px;
-    left: 240px;
-    top: 544px;
+#hourglass-image{
+    height: 100%;
+    animation: pulse 5s infinite ease-in-out;
 }
 
-form > button {
-    position: absolute;
-    width: 219px;
-    height: 80px;
-    left: 941px;
-    top: 565px;
-    border-radius: 30%;
+#main-h1{
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+
+form {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+#name-input {
+    padding: 10px; 
+    margin: 20px;
+}
+
+footer {
+    margin: 25px;
+    text-align: center;
+}
+
+a:hover{
+    cursor: pointer;
+    color: green;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+
+#name-input-button {
+    padding: 10px; 
+    margin: 20px;
+    background-color: rgba(217, 233, 208, 0.8);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    border: none;
+    color: #FFF;
+    transition: all 0.3s;
+}
+
+
+  #name-input-button:hover {
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+
+  @keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+
+  }

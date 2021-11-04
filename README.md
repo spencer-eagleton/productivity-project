@@ -1,2 +1,16 @@
+### Team Members
+[Mark Voltaire](https://github.com/markjvoltaire)\
+[Michelle Nygren](https://github.com/michellerenehey)\
+[Mira Kinebuchi](https://github.com/mira-kine)\
+[Spencer Eagleton](https://github.com/spencer-eagleton)
+
 ### Planning
-Link to Miro Page: https://miro.com/app/board/o9J_lm9RWJA=/?invite_link_id=563125503924
+[Link to Miro Board](https://miro.com/app/board/o9J_lm9RWJA=/?invite_link_id=563125503924)
+
+
+### Photo Credits
+*   User-input background: Jen We, 2017
+
+### Photo Credit
+Dew grass: Aaron Burden
+Frosty plant: Katie Moum

@@ -47,10 +47,9 @@ line-height: 59px;
 h3{
     color: black;
 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-weight: 800;
-padding-left: 300px;
+text-align: center;
 line-height: 30px;
 font-size: 30px;
 }
@@ -102,4 +101,8 @@ font-family: SF UI Text;
 font-style: normal;
 font-weight: bold;
 
+}
+
+#founders-link{
+    padding-top: 100px;
 }

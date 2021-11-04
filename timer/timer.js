@@ -16,15 +16,18 @@ for (let item of user.tasks){
     taskContainer.append(li); 
     
     if (item.completed === true){
-        checkbox.classList.add('completed');
+        li.classList.add('completed');
     }
+
     checkbox.addEventListener('change', (e) => {
         if (e.target.checked){
             completeTask(item.id);
+            li.style.textDecoration = 'line-through';
         } 
         else {
             incompleteTask(item.id);
             checkbox.classList.remove('completed');
+            li.style.textDecoration = 'none';
         }
     });
 } 
@@ -35,15 +38,20 @@ doneButton.addEventListener('click', () => {
 });
 
 
-let timer = 27;
+let timer = 0;
 const progressBar = document.getElementById('progress-bar');
+const duration = 2700;
+const interval = 1000;
+   
+let intervalId = setInterval(()=>{
+    timer++;
+ 
+    console.log(timer);
+    progressBar.style.width = `${timer * (duration / interval)}%`;
+    if (timer === (duration / 100) + 1){
+        clearInterval(intervalId);
 
-let interval = setInterval(()=>{
-    // console.log(timer--);
-    progressBar.style.width = `${timer / 27 * 100}%`;
-    if (timer === 0){
-        clearInterval(interval);
-        // window.location.replace('../results');
+        window.location.replace('../results');
         window.alert('Time for a break. You deserve it!');
     }
 }, 1000);

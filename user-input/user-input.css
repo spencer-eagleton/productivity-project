@@ -1,86 +1,108 @@
-#main-container {
-    position: absolute;
-    width: 1440px;
-    height: 1042px;
-    left: 0px;
-    top: 0px;
-    /* background-image:  */
+/* font-family: 'Monoton', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Zen Maru Gothic', sans-serif; */
+
+body {
+    background-image: url('../assets/light.jpg');
+    background-size: cover;
 }
 
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%; 
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+
 #logo {
-    position: absolute;
+    /* position: absolute; */
     width: 187px;
     height: 78px;
     left: 17px;
     top: 29px;
 
-    font-family: SF UI Text;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
     line-height: 57px;
+    margin: 25px; 
+    display: flex; 
 }
 
 #user-display {
-    position: absolute;
+    /* position: absolute;
     width: 488px;
     height: 75px;
     left: 918px;
-    top: 22px;
+    top: 22px; */
 
-    font-family: SF UI Text;
+    font-family: 'Zen Maru Gothic', cursive;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 57px;
+    margin: 25px;
 }
 
-#task1 {
-    position: absolute;
-    width: 373px;
-    height: 74px;
-    left: 533px;
-    top: 438px;
 
-    background: rgba(196, 196, 196, 0.83);
-    border: 6px solid #000000;
-    box-sizing: border-box;
-    border-radius: 18px;
+#main-container {
+    /* position: absolute; */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: start;
+    align-items: center;
+    width: 90vw;
+    height: 85vh;
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-#task2 {
-    position: absolute;
-    width: 373px;
-    height: 74px;
-    left: 533px;
-    top: 559px;
-
-    background: rgba(196, 196, 196, 0.83);
-    border: 6px solid #000000;
-    box-sizing: border-box;
-    border-radius: 18px;
+#task-form-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90vw;
 }
 
-#task3 {
-    position: absolute;
-    width: 373px;
-    height: 74px;
-    left: 533px;
-    top: 694px;
+#task-list-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 90vw;
+}
 
-    background: rgba(196, 196, 196, 0.83);
-    border: 6px solid #000000;
-    box-sizing: border-box;
-    border-radius: 18px;
+
+@keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+
+  }
+
+  #hourglass {
+    animation: pulse 5s infinite ease-in-out;
+}
+  
+ul {
+    list-style-type:none;
 }
 
 #task-input-button {
-    position: absolute;
-    width: 319px;
-    height: 60px;
-    left: 560px;
-    top: 866px;
-
-    background: #72DCF3;
-    border-radius: 13px;
+    width: 100px;
+    height: 100px;
 }

@@ -15,12 +15,12 @@ const userObject = getUser();
 for (let item of userObject.tasks){
     if (item.completed === true){
         const h3Comp = document.createElement('h3');
-        h3Comp.textContent = item.id;
+        h3Comp.textContent = item.message;
         divCompleted.appendChild(h3Comp);
     }
     else if (item.completed === false){
         const h3Incomp = document.createElement('h3');
-        h3Incomp.textContent = item.id;
+        h3Incomp.textContent = item.message;
         divIncompleted.appendChild(h3Incomp);
     }
     resultsDisplay.append(divCompleted, divIncompleted);

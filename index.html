@@ -7,25 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Welcome</title>
+    <!-- Title -->    
+    <link rel="shortcut icon" href="./assets/hourglass.png" />
+    <title>DOOEY</title>
 </head>
 
 <body>
     <header>
         <h1>dooey</h1>
+        <img id="hourglass-image" src="./assets/hourglass.png" alt="hourglass">
     </header>
     <main>
-        <h1>Welcome to your journey of productivity!</h1>
-        <span id="random-quote"></span>
+        <h1 id="main-h1">Welcome to DOOEY! An app built for Alchemy students, helping to-do's become <em>to-dones</em>.</h1>
         <form id="user-form">
-            <input type="text" name="name-input" placeholder="Enter your name...">
+            <input id="name-input" type="text" name="name-input" placeholder="Enter your name...">
             <button id="name-input-button">Let's go!</button>
         </form>
     </main>
     <footer>
-     
+        <a href="./about/index.html">About the founders</a>
     </footer>
 
     <script type="module" src="./app.js"></script>
