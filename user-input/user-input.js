@@ -26,7 +26,6 @@ form.addEventListener('submit', (e) => {
 
 const taskContainer = document.getElementById('task-list'); 
 
-
 for (let item of user.tasks){
     if (item.completed === false){
         const li = document.createElement('li'); 
