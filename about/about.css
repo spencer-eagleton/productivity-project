@@ -286,6 +286,7 @@ a.nav-link:active{
 h1{
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: bold;
+}
 
 @keyframes pulse {
     20% {
@@ -303,5 +304,4 @@ h1{
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
-
 }
