@@ -179,3 +179,21 @@ a.nav-link:active{
     text-decoration: none;
 }
 
+#done-button {
+  padding: 10px; 
+  margin: 20px;
+  background-color: rgba(217, 233, 208, 0.8);
+  font-family: 'Zen Maru Gothic', sans-serif;
+  border: none;
+  color: #FFF;
+  transition: all 0.3s;
+}
+
+#done-button:hover {
+  letter-spacing: 5px;
+  cursor: pointer;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
