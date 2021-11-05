@@ -39,7 +39,7 @@ doneButton.addEventListener('click', () => {
 
 let timer = 0;
 const progressBar = document.getElementById('progress-bar');
-const duration = 2700;
+const duration = 150;
 const interval = 1000;
 
 let intervalId = setInterval(()=>{
