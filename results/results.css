@@ -179,3 +179,7 @@ a.nav-link:active{
     color: #ffffff;
     text-decoration: none;
 }
+
+#user-display {
+    color: white;
+}
