@@ -47,7 +47,7 @@ color: #FAFBFF;
 
 #audio {
     position: relative;
-    top: 200px;
+    top: 100px;
     left: 600px;
 }
 
@@ -82,7 +82,7 @@ line-height: 57px;
 color: white;
 }
 
-#mark-info{
+.mark-info{
     position: absolute;
     width: 365px;
     height: 47px;
@@ -97,8 +97,11 @@ color: white;
     
     color: #FFFFFF;
     
-    
+}
 
+#mark-msg{
+    top: 460px;
+    font-size: 25px;
 }
 
 #mark-pic{
@@ -132,7 +135,7 @@ color: white;
     
 }
 
-#michelle-info{
+.michelle-info{
     position: absolute;
     width: 503px;
     height: 46px;
@@ -146,8 +149,12 @@ color: white;
     line-height: 43px;
     
     color: #FFFCFC;
- 
 
+}
+
+#michelle-msg{
+    top: 460px;
+    font-size: 25px;
 }
 
 #michelle-pic{
@@ -179,7 +186,7 @@ color: #FFFCFC;
 
 }
 
-#mira-info{
+.mira-info{
  
     position: absolute;
 width: 503px;
@@ -195,7 +202,11 @@ line-height: 43px;
 
 color: #FFFCFC;
 
+}
 
+#mira-msg{
+    top: 645px;
+    font-size: 25px;
 }
 
 #mira-pic{
@@ -209,8 +220,6 @@ background: url(mira.png);
 border-radius: 74px;
  
 }
-
-
 
 #spencer-name{
     
@@ -231,7 +240,7 @@ color: #FFFCFC;
 
 }
 
-#spencer-info{
+.spencer-info{
  
     position: absolute;
     width: 503px;
@@ -246,8 +255,11 @@ color: #FFFCFC;
     line-height: 43px;
     
     color: #FFFCFC;
+}
 
-
+#spencer-msg{
+    top: 645px;
+    font-size: 25px;
 }
 
 #spencer-pic{
