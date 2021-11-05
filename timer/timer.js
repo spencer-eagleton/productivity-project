@@ -37,10 +37,6 @@ doneButton.addEventListener('click', () => {
     window.location.replace('../results');
 });
 
-
-
-
-
 let timer = 0;
 const progressBar = document.getElementById('progress-bar');
 const duration = 2700;
