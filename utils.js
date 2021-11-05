@@ -23,7 +23,7 @@ export function displayUser(userObject){
     const img = document.createElement('img'); 
     
     img.setAttribute('id', 'hourglass'); 
-    img.src = '../assets/hourglass.png';
+    img.src = '../assets/logo.png';
     userName.textContent = `Hello, ${userObject.name}!`;
     
     logo.append(img); 
