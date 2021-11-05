@@ -36,7 +36,7 @@ h1{
     font-weight: bold;
 }
 
-main {
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;

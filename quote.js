@@ -6,8 +6,6 @@ export const quotes = [
     'You can, you should, and if you’re brave enough to start, you will', 
     'Tomorrow becomes never. No matter how small the task, take the first step now!'];
 
-
-
 export function randomQuote() { 
     quotes[Math.floor(Math.random() * quotes.length)];
 }
