@@ -11,7 +11,7 @@ header {
     align-items: center;
 }
 
-#hourglass-image{
+#logo-image{
     height: 100%;
     animation: pulse 5s infinite ease-in-out;
 }
