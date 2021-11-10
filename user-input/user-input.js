@@ -27,7 +27,7 @@ form.addEventListener('submit', (e) => {
 const taskContainer = document.getElementById('task-list'); 
 
 for (let item of user.tasks){
-    if (item.completed === false){
+    if (!item.completed){
         const li = document.createElement('li'); 
         li.textContent = item.message;
         taskContainer.append(li);

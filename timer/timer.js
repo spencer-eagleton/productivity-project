@@ -15,7 +15,7 @@ for (let item of user.tasks){
     li.append(checkbox); 
     taskContainer.append(li); 
     
-    if (item.completed === true){
+    if (item.completed){
         li.classList.add('completed');
     }
 
