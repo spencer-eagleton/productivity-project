@@ -11,6 +11,7 @@ export function randomQuote() {
     quotes[Math.floor(Math.random() * quotes.length)];
 }
 
+// did you mean to call randomQuote here?
 const getQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 const quoteDisplay = document.getElementById('quote-text');

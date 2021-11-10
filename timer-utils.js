@@ -2,6 +2,7 @@ import { setUser, getUser } from './utils.js';
 
 export function completeTask(taskId){
     const user = getUser();
+    // great use of `.find`!
     const checkedTask = user.tasks.find((task) => task.id === taskId);
     checkedTask.completed = true;
     setUser(user);
